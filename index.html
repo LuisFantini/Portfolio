@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Rafael</title>
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/mediaqueries.css">
 </head>
+
 <body>
-    
+    <nav id="nav-pc">
+        <div class="logo">Rafael Lopes</div>
+        <div>
+            <ul class="link-nav">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile">
+        <div class="logo">Rafael Lopes</div>
+        <div class="menu-mobile">
+            <div class="icone-mobile" onclick="ativaMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="links-menu">
+                <li><a href="#sobre" onclick="ativaMenu()">Sobre</a></li>
+                <li><a href="#experiencia" onclick="ativaMenu()">Experiência</a></li>
+                <li><a href="#projetos" onclick="ativaMenu()">Projetos</a></li>
+                <li><a href="#contato" onclick="ativaMenu()">Contato</a></li>
+            </div>
+        </div>
+
+    </nav>
+
+    <script src="assets/script.js"></script>
 </body>
+
 </html>
