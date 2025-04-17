@@ -375,9 +375,9 @@ article .icone {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 5;
-  }
+}
   
-  #modal {
+#modal {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -388,37 +388,37 @@ article .icone {
     padding: 1.2rem;
     border-radius: 0.5rem;
     z-index: 10;
-  }
+}
   
-  #fade,
-  #modal {
+#fade,
+#modal {
     transition: 0.5s;
     opacity: 1;
     pointer-events: all;
-  }
+}
   
-  .modal-header {
+.modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ccc;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-  }
+}
   
-  .modal-body p {
+.modal-body p {
     margin-bottom: 1rem;
-  }
+}
   
-  #modal.hide,
-  #fade.hide {
+#modal.hide,
+#fade.hide {
     opacity: 0;
     pointer-events: none;
-  }
+}
   
-  #modal.hide {
+#modal.hide {
     top: 0;
-  }
+}
 
 #modal h2 {
     color: rgb(30, 30, 30);
@@ -444,4 +444,54 @@ article .icone {
 #modal img {
     width: 100%;
     height: 100%;
+}
+
+/* CONTATO */
+#contato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.info-contato-cima-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contato-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contato-info-container p {
+    font-size: larger;
+}
+
+.icone-contato {
+    cursor: default;
+    
+}
+
+.icone-email {
+    height: 2.5rem;
+}
+
+/* FOOTER */
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
 }
