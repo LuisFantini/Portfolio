@@ -1,10 +1,8 @@
 # Portfólio
 
-Olá! Este é meu site Portifólio Pessoal, sou o Rafael Lopes, nascido em 2004 e natural de Belo Horizonte. Atualmente, sou estudante de Engenharia de Software na PUC Minas, onde tenho me dedicado a desenvolver habilidades em programação e construção de soluções tecnológicas. Estou em busca de oportunidades para aplicar e expandir meu conhecimento na área de desenvolvimento de software.
-
 O portfólio foi desenvolvido utilizando HTML5 para a estruturação das páginas, CSS3 para a estilização e responsividade, além de JavaScript para adicionar interatividade, como o funcionamento do menu mobile e dos modais de detalhes dos projetos. Também foram utilizadas bibliotecas como Bootstrap para facilitar a criação dos layouts e responsividade.
 
-Link: [https://rafaellopes1810.github.io/Portfolio/](https://rafaellopes1810.github.io/Portfolio/)
+Link: 
 
 ## Estrutura do Projeto
 
