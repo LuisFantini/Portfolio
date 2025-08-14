@@ -56,9 +56,7 @@ O vídeo do protótipo demonstra como as páginas foram planejadas e como a nave
 📌 **Link do Figma:** [Clique aqui para ver no Figma](https://www.figma.com/design/7ENL8HAbRJAoUAiZyN7lLg/Wireframes-Portfolio?node-id=0-1&t=m0PyZFouDLtTgobx-1)
 
 🎥 **Assista ao vídeo do protótipo:**  
-![Vídeo do Protótipo](docs/prototipo/prototipo.mp4)
-
-O vídeo está localizado na pasta `/docs/prototipo`:
+Localizado na pasta `/docs/prototipo`:
 ```
 docs
 └── prototipo
