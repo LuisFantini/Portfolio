@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/contato.css">
+  <!-- Ícones (FontAwesome) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="contato">
+    <h2>Contato</h2>
+
+    <!-- Ícones clicáveis -->
+    <div class="icones-contato">
+        <img src="assets/img/email.png" alt="Meu E-mail" class="icone" onclick="location.href='mailto:luisfask8@outlook.com'">
+        <img src="assets/img/whatsapp.png" alt="Meu whatsapp" class="icone" onclick="location.href='https://wa.me/31971094427'">
+        <img src="assets/img/linkedin.png" alt="Meu perfil do LinkedIn" class="icone" onclick="location.href='https://www.linkedin.com/in/lu%C3%ADs-henrique-fantini-almeida-b97187285/'">
+    </div>
+
+    <!-- Formulário -->
+    <form id="form-contato">
+      <input type="text" name="user_name" placeholder="Nome" required>
+      <input type="email" name="user_email" placeholder="E-mail" required>
+      <textarea name="message" placeholder="Mensagem" required></textarea>
+      <button type="submit" class="btn btn-cor-1"><i class="fas fa-paper-plane"></i> Enviar</button>
+    </form>
+  </section>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // Inicializa com sua chave pública
+    (function() {
+      emailjs.init({
+        publicKey: "nxOrFzshhV92CmvXW"
+      });
+    })();
+
+    // Captura o envio do formulário
+    document.getElementById("form-contato").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_krfju7l", "template_0evill6", this)
+        .then(() => {
+          alert("Mensagem enviada com sucesso!");
+          this.reset();
+        }, (error) => {
+          alert("Erro ao enviar mensagem: " + JSON.stringify(error));
+        });
+    });
+  </script>
+</body>
+</html>
