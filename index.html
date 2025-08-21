@@ -303,21 +303,21 @@
                                     projetos. Também foram utilizadas bibliotecas como Bootstrap para facilitar a
                                     criação dos layouts e responsividade.
                                 </p>
-                                <img src="assets/img/Projeto1-modal-img.jpeg" alt="Print do Projeto 1">
+                                <img src="assets/video/portfolio.gif" alt="Print do Projeto 1">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Projeto 3 -->
+                <!-- Projeto 2 -->
                 <div class="detalhes-container cor-container">
                     <div class="article-container">
                         <img src="assets/img/Projeto2-img.png" alt="Projeto 2" class="projeto-img">
                     </div>
-                    <h2 class="experiencia-subtitulo titulo-projeto">ByteBusters</h2>
+                    <h2 class="experiencia-subtitulo titulo-projeto">E-commerce</h2>
                     <div class="btn-container">
                         <button class="btn-cor-2 btn projeto-btn"
-                            onclick="location.href='https://github.com/pucmg-aulas/ByteBusters'">
+                            onclick="location.href='https://github.com/RafaelLopes1810/Ecommerce'">
                             GitHub
                         </button>
                         <button id="open-modal" class="btn-cor-2 btn projeto-btn">
@@ -326,17 +326,19 @@
                         <div id="fade" class="hide"></div>
                         <div id="modal" class="hide">
                             <div class="modal-header">
-                                <h2>Este é o Modal</h2>
+                                <h2>E-commerce</h2>
                                 <a id="close-modal">X</a>
                             </div>
                             <div class="modal-body">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quam?
-                                    Quas accusantium id cupiditate iste veritatis repudiandae odio dolore
-                                    voluptas. Eum, deserunt quod. Sit similique laudantium assumenda
-                                    repellat vel necessitatibus.
+                                    Este projeto é um sistema de e-commerce simples desenvolvido com foco educacional.
+                                    No back-end, foi utilizado o .NET 8 com C#, estruturado com base na abordagem DDD
+                                    (Domain-Driven Design). O front-end foi construído com Angular 17 e TypeScript. Os
+                                    dados inicialmente foram armazenados localmente usando SQL Server e depois migrado
+                                    para um banco de dados SQL hospedado no Azure, permitindo conexão real com a nuvem.
+                                    O objetivo do projeto é integrar essas tecnologias em um fluxo completo de cadastro
+                                    e listagem de produtos, servindo como base para aplicações maiores e mais robustas.
                                 </p>
-                                <img src="assets/img/teste.png" alt="Print do Projeto 2">
                             </div>
                         </div>
                     </div>
@@ -359,15 +361,21 @@
                         <div id="fade" class="hide"></div>
                         <div id="modal" class="hide">
                             <div class="modal-header">
-                                <h2>Este é o Modal</h2>
+                                <h2>WorkLink</h2>
                                 <a id="close-modal">X</a>
                             </div>
                             <div class="modal-body">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quam?
-                                    Quas accusantium id cupiditate iste veritatis repudiandae odio dolore
-                                    voluptas. Eum, deserunt quod. Sit similique laudantium assumenda
-                                    repellat vel necessitatibus.
+                                    Este projeto foi desenvolvido para a disciplina Trabalho Interdisciplinar 2, no
+                                    curso de Engenharia de Software. Trata-se de um sistema de divulgação de vagas de
+                                    emprego, no qual empresas podem cadastrar e divulgar suas oportunidades, enquanto
+                                    candidatos têm a possibilidade de visualizar e se candidatar às vagas disponíveis.
+                                    <br>
+                                    O sistema foi implementado utilizando as seguintes tecnologias: <br>
+                                    - MySQL para gerenciamento do banco de dados; <br>
+                                    - HTML, CSS e JavaScript para a construção do front-end; <br>
+                                    - Bootstrap para estilização responsiva; <br>
+                                    - Java com Spring Boot para o back-end e integração das funcionalidades. <br>
                                 </p>
                                 <img src="assets/img/teste.png" alt="Print do Projeto 3">
                             </div>
@@ -401,36 +409,19 @@
         </div>
 
         <!-- Formulário -->
-    <form id="form-contato">
-        <input type="text" name="user_name" placeholder="Nome" required>
-        <input type="email" name="user_email" placeholder="E-mail" required>
-        <textarea name="message" placeholder="Mensagem" required></textarea>
-        <button type="submit" class="btn btn-cor-1"><i class="fas fa-paper-plane"></i> Enviar</button>
-      </form>
-    </section>
-  
-    <!-- EmailJS -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script>
-      (function() {
-        emailjs.init({
-          publicKey: "GoqhGhuMUNsj44mkT"
-        });
-      })();
-  
-      document.getElementById("form-contato").addEventListener("submit", function(event) {
-        event.preventDefault();
-  
-        emailjs.sendForm("service_e5trhvm", "template_4hx8ig9", this)
-          .then(() => {
-            alert("Mensagem enviada com sucesso!");
-            this.reset();
-          }, (error) => {
-            alert("Erro ao enviar mensagem: " + JSON.stringify(error));
-          });
-      });
-    </script>
-  
+        <form id="form-contato">
+            <div class="linha-inputs">
+                <input type="text" name="user_name" placeholder="Nome" required>
+                <input type="email" name="user_email" placeholder="E-mail" required>
+            </div>
+
+            <div class="linha-mensagem">
+                <textarea name="message" placeholder="Mensagem" required></textarea>
+                <button type="submit" class="btn btn-cor-1">
+                    <img src="./assets/img/mandar.png" alt="Ícone" class="icone">
+                </button>
+            </div>
+        </form>
     </section>
 
     <footer>
@@ -448,6 +439,7 @@
     </footer>
 
     <script src="assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </body>
 
 </html>
