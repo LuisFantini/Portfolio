@@ -399,6 +399,38 @@
                 <p><a href="https://www.linkedin.com/in/rafael-de-oliveira-caldeira-lopes-bba58126b/">LinkedIn</a></p>
             </div>
         </div>
+
+        <!-- Formulário -->
+    <form id="form-contato">
+        <input type="text" name="user_name" placeholder="Nome" required>
+        <input type="email" name="user_email" placeholder="E-mail" required>
+        <textarea name="message" placeholder="Mensagem" required></textarea>
+        <button type="submit" class="btn btn-cor-1"><i class="fas fa-paper-plane"></i> Enviar</button>
+      </form>
+    </section>
+  
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init({
+          publicKey: "GoqhGhuMUNsj44mkT"
+        });
+      })();
+  
+      document.getElementById("form-contato").addEventListener("submit", function(event) {
+        event.preventDefault();
+  
+        emailjs.sendForm("service_e5trhvm", "template_0evill6", this)
+          .then(() => {
+            alert("Mensagem enviada com sucesso!");
+            this.reset();
+          }, (error) => {
+            alert("Erro ao enviar mensagem: " + JSON.stringify(error));
+          });
+      });
+    </script>
+  
     </section>
 
     <footer>
