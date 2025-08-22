@@ -12,7 +12,6 @@ body {
 
 html {
     scroll-behavior: smooth;
-    /* background: linear-gradient(to right, #EEEEEE, #FFFFFF); */
 }
 
 p {
@@ -214,6 +213,10 @@ section {
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
+}
+
+.foto-principal {
+    border-radius: 100%;
 }
 
 /* ÍCONES */
