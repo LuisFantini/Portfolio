@@ -64,6 +64,21 @@ a:hover {
     cursor: default;
 }
 
+.idioma-botoes {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.btn-pt:hover {
+    color: green;
+    text-decoration-color: green;
+}
+
+.btn-en:hover {
+    color: red;
+    text-decoration-color: red;
+}
+
 /* NAV MOBILE */
 #nav-mobile {
     display: none;
