@@ -28,7 +28,7 @@ PORTFOLIO
 ## Wireframes
 
 Os wireframes do projeto foram criados no **Figma** como uma etapa inicial para planejar a disposição dos elementos, a hierarquia visual e a experiência de navegação antes da criação do protótipo e do desenvolvimento.  
-Eles serviram como guia para o design final do portfólio.
+Eles serviram como guia para o design final do portfólio
 
 📌 **Link do Figma:** [Clique aqui para ver no Figma](https://www.figma.com/design/7ENL8HAbRJAoUAiZyN7lLg/Wireframes-Portfolio?node-id=0-1&t=m0PyZFouDLtTgobx-1)
 
