@@ -2,7 +2,7 @@
 
 O portfólio foi desenvolvido utilizando HTML5 para a estruturação das páginas, CSS3 para a estilização e responsividade, além de JavaScript para adicionar interatividade, como o funcionamento do menu mobile e dos modais de detalhes dos projetos. Também foram utilizadas bibliotecas como Bootstrap para facilitar a criação dos layouts e responsividade.
 
-Link: 
+Link: https://luisfantini.github.io/Portfolio/
 
 ## Estrutura do Projeto
 
@@ -60,3 +60,40 @@ docs
 └── prototipo
   └── prototipo.mp4
 ```
+## Instruções de Uso
+
+1. **Abrir o projeto**
+  - Basta abrir pelo link: [https://luisfantini.github.io/Portfolio/](https://luisfantini.github.io/Portfolio/).
+  - Ou baixar todo projeto e abrir o arquivo `index.html` em qualquer navegador.
+  - O site é responsivo e pode ser acessado tanto em computadores quanto em dispositivos móveis.
+
+2. **Barra de Navegação**
+  - O menu superior permite acessar as seções: **Sobre, Skills, Projetos e Contato**.
+  - No celular, utilize o **menu hambúrguer** para abrir as opções.
+  - O site possui suporte a **idiomas** (Português e Inglês), que podem ser alternados pelos botões `PT` e `EN`.
+
+3. **Funcionalidades principais**
+  - **Baixar Currículo**: botão que abre o documento em Google Docs.
+  - **Links sociais**: acesso direto ao **LinkedIn** e **GitHub**.
+  - **Projetos**: cada projeto possui botão de acesso ao GitHub e modal com detalhes.
+  - **Formulário de contato**: envia mensagens via integração com **EmailJS**.
+  - **Responsividade**: otimizado para desktop e dispositivos móveis.
+
+## Instruções de Desenvolvimento
+
+1. **Pré-requisitos**
+   - Navegador atualizado.  
+   - Editor de código (ex.: VSCode).  
+   - Internet para carregar EmailJS e dependências externas.  
+
+2. **Estrutura do Projeto**
+   - Consulte a seção **Estrutura do Projeto** neste documento para detalhes.  
+
+3. **Scripts**
+   - `script.js`: gerencia menu mobile, modais e envio do formulário e contém os textos em PT/EN e a função `changeLanguage()`.  
+
+4. **Tradução**
+   - Elementos com `data-i18n` são traduzidos dinamicamente pelo `script.js`.  
+
+5. **Formulário (EmailJS)**
+   - Configure seu **Service ID**, **Template ID** e **Public Key** em `script.js`.
